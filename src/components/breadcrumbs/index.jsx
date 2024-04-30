@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
+import "index.scss";
 
 const Breadcrumbs = () => {
   const location = useLocation();
