@@ -4,7 +4,8 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { Outlet } from 'react-router';
 import Navbar from './navbar';
-import 'index.scss';
+import Breadcrumbs from "../breadcrumbs"
+import './index.scss';
 
 const Layout = () => {
     const [showButton, setShowButton] = useState(false);
@@ -29,6 +30,7 @@ const Layout = () => {
     return (
         <>
             <Navbar />
+            <Breadcrumbs/>
             <main className="app">
                 <Outlet />
             </main>

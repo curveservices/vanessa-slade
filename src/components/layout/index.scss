@@ -1,0 +1,84 @@
+.app {
+    position: relative;
+    will-change: contents;
+    transform-style: preserve-3d;
+    font-family: "Coolvetica";
+    animation: fadeIn 4s forwards;
+    color: #000;
+    .home-page,
+    .about-page,
+    .serivces-page,
+    .contact-page,
+    .single-service,
+    .policy-page {
+        h1 {
+            
+            
+            margin: 0;
+        }
+
+        h2 {
+           
+            
+            margin: 0;
+        }
+
+        p {
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 900;
+            min-width: fit-content;
+            font-weight: 600;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 15rem;
+    right: 0;
+    font-size: 28px;
+    padding: 10px;
+    margin: 0;
+    background: #9d9d9d;
+    border-radius: 20% 0% 0% 20%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    box-shadow: var(--button-shadow);
+    cursor: pointer;
+    animation: fadeInRight 2s;
+    transition: all 1s;
+
+    &:hover {
+        background: #636363;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .app {
+        background-image: none;
+
+        .home-page,
+        .about-page,
+        .serivces-page,
+        .single-service,
+        .policy-page {
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
