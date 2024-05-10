@@ -4,12 +4,19 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
+import Layout from "./components/layout";
+import NotFound from "./components/pages/404"
+import Home from "./components/pages/Home";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route></Route>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home/>} />
+      </Route>
+      <Route path="*" element={<NotFound/>}></Route>
     </>,
   ),
 );
