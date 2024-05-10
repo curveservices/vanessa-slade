@@ -1,54 +1,32 @@
-import "index.scss";
-import { NavLink } from "react-router-dom";
+import "./index.scss";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
     const year = new Date().getFullYear();
     return (
         <footer>
-            <div className="foot-title">
-                <div>Vanessa Slade</div>
+            <div className="link-container">
+                <div className="links">
+                    <NavLink to="tuition">Tuition</NavLink>
+                    <NavLink to="subjects">Subjects</NavLink>
+                    <NavLink to="/" className="home-link">VANESSA SLADE</NavLink>
+                    <NavLink to="about-me">About Me</NavLink>
+                    <NavLink tto="contact-me">Contact Me</NavLink>
+                </div>
             </div>
-
+            <hr className="div-line"></hr>
             <div className="socials-container">
-                <p>Follow Me</p>
                 {/* <Socials />  */}
             </div>
-
-            <div className="link-container">
-                <div className="studio">
-                    <ul className="site-links">
-                        <li>
-                            <p>Tutor</p>
-                        </li>
-                        <li>
-                            <NavLink to='/'>Home</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to='/'>Tuition</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to='/'>Services</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to='/'>About</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to='/'>Contact</NavLink>
-                        </li>
-                    </ul>
+            <div className="copy-container">
+                <p className="copy">Copyright <Link to="https://immutable-studio.co.uk/">Immutable Studio &copy;{year}</Link></p>
+                <div className="small-print">
+                    <p className="copy"><Link to="privacy-policy">Privacy</Link></p>
+                    <p className="copy"><Link to="terms">Terms</Link></p>
                 </div>
-                <div className="experts">
-                    <ul>
-                        <li>
-                            <p>Specialse in</p>
-                        </li>
-                        <li>GCSE prep</li>
-                        <li>A-Level prep</li>
-                        <li>STEP Exam prep</li>
-                        <li>Further education</li>
-                    </ul>
-                </div>
+                
             </div>
+            
         </footer>
     );
 }
