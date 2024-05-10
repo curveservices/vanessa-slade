@@ -4,7 +4,8 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { Outlet } from 'react-router';
 import Navbar from './navbar';
-import Breadcrumbs from "../breadcrumbs"
+import Breadcrumbs from "../breadcrumbs";
+import Footer from "../layout/footer"
 import './index.scss';
 
 const Layout = () => {
@@ -39,6 +40,7 @@ const Layout = () => {
                     <FontAwesomeIcon icon={faArrowUp} />
                 </button>
             )}
+            <Footer/>
         </>
     );
 };
