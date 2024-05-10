@@ -1,8 +1,32 @@
 :root {
-  --primary: #435050;
+  --primary: #fff;
+  --secondary: #98DDC5;
+  --oposite: #DD98B0;
+  --header: #98ddc599;
+  --global-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.7);
+  --button-shadow: 8px 8px 12px rgba(0, 0, 0, 0.4);
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+#root {
+  padding-bottom: 10px;
+}
+
+a {
+  color: #000;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  letter-spacing: 2.5px;
+  line-height: 1.2;
+  background: var(--primary);
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-oxs-font-smoothing: grayscale;
 }
