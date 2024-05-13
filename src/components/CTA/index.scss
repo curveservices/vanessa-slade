@@ -1,26 +1,24 @@
-.cta {
+.call-to-action {
     display: flex;
     justify-content: space-between;
-    background-image: url("../../assets/images/1746747.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 90vh;
+    align-items: center;
     margin: 2rem 0;
-    box-shadow: var(--global);
+    padding: 2rem 1rem;
+    box-shadow: var(--page-shadow);
 
     .text-container {
         width: 50%;
 
         .cta-title {
             margin: 0;
-            padding: 2rem 4rem;
+            padding: 0rem 4rem;
             font-size: 3rem;
         }
 
         .cta-p {
             font-family: sans-serif;
             font-weight: 600;
-            margin: 0 4rem;
+            margin: 2rem 4rem;
         }
     }
 
@@ -30,8 +28,7 @@
         height: 40%;
         gap: 2rem;
         justify-content: center;
-        align-items: flex-end;
-        margin-top: 5rem;
+        align-items: center;
     }
 }
 

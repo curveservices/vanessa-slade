@@ -4,9 +4,9 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { Outlet } from 'react-router';
 import Navbar from './navbar';
-import Breadcrumbs from "../breadcrumbs";
 import Footer from "../layout/footer"
 import './index.scss';
+import Breadcrumbs from '../breadcrumbs';
 
 const Layout = () => {
     const [showButton, setShowButton] = useState(false);
@@ -30,18 +30,23 @@ const Layout = () => {
 
     return (
         <>
-            <Navbar />
-            <Breadcrumbs/>
-            <main className="app">
-                <Outlet />
-            </main>
-            {showButton && (
-                <button className="back-to-top" onClick={scrollToTop}>
-                    <FontAwesomeIcon icon={faArrowUp} />
-                </button>
-            )}
-            <Footer/>
+            <div className='app'>
+                <Navbar />
+                <Breadcrumbs />
+                <main>
+                    <Outlet />
+                </main>
+                <Footer />
+            </div>
+            {
+                showButton && (
+                    <button className="back-to-top" onClick={scrollToTop}>
+                        <FontAwesomeIcon icon={faArrowUp} />
+                    </button>
+                )
+            }
         </>
+
     );
 };
 

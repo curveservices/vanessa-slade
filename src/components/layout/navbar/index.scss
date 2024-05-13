@@ -2,9 +2,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #98ddc599 ;
+    background: var(--header);
     position: fixed;
     width: 100%;
+    top: 0;
     letter-spacing: 3px;
     margin: 0;
     padding: 0rem 2rem;
@@ -37,8 +38,10 @@ header {
             display: none;
             position: absolute;
             padding: 2rem 1rem;
-            right: 13%;
-            background: var(--services-link);
+            top: 131%;
+            left: 0%;
+            width: 100%;
+            background: var(--header);
             box-shadow: var(--global);
         }
 

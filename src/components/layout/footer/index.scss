@@ -1,8 +1,8 @@
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     margin: 0;
-    height: 300px;
+    padding: 1rem;
     width: 100%;
     font-family: "Coolvetica";
     background: var(--secondary);
@@ -30,7 +30,7 @@ footer {
         border: 1px solid var(--oposite);
     }
 
-    .socials-container {}
+    
 
     .copy-container {
         display: flex;

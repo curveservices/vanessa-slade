@@ -3,7 +3,7 @@ import "./index.scss";
 
 const CTA = () => {
     return (
-        <>
+        <div className="call-to-action">
             <div className="text-container">
                 <h2 className="cta-title">Ready to get started</h2>
                 <p className="cta-p">
@@ -23,7 +23,7 @@ const CTA = () => {
                     background="var(--oposite)"
                 />
             </div>
-        </>
+        </div>
     );
 }
 

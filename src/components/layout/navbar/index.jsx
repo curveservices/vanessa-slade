@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from '../../../assets/images/image-holder.png'
+import logo from '../../../assets/images/image-holder.png';
 import "./index.scss"
 import Button from "../../button";
 
@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
       <header className={isScrolled ? "navbar-scroll" : ""}>
-          <nav className={`"nav-bar" ${showNav ? "mobile-show" : ""}`}>
+          <nav className={showNav ? "mobile-show" : ""}>
               <NavLink to="/">
                   <div className="title">Vanessa Slade</div>
                   <img src={logo} className="logo" alt="Vanessa slade" />
@@ -119,7 +119,7 @@ const Navbar = () => {
           <Button
               className="nav-btn"
               text="Book a Call"
-              to=""
+              to="https://calendly.com/immutable-studio/website-consultancy"
               target="_blank"
               background="#DD98B0"
               color="000"
@@ -130,6 +130,7 @@ const Navbar = () => {
               className="hamburger"
               onClick={() => setShowNav(true)}
           />
+
     </header>
   );
 };
