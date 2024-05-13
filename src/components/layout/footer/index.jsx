@@ -1,5 +1,6 @@
 import "./index.scss";
 import { Link, NavLink } from "react-router-dom";
+import Socials from "../../socials";
 
 const Footer = () => {
     const year = new Date().getFullYear();
@@ -16,7 +17,7 @@ const Footer = () => {
             </div>
             <hr className="div-line"></hr>
             <div className="socials-container">
-                {/* <Socials />  */}
+                <Socials />
             </div>
             <div className="copy-container">
                 <p className="copy">Copyright <Link to="https://immutable-studio.co.uk/">Immutable Studio &copy;{year}</Link></p>
