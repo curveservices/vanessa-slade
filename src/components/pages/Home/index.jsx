@@ -8,7 +8,6 @@ import "./index.scss";
 import WorkCard from "../../Cards/work-card";
 import Loader from "react-loaders";
 
-
 const Home = () => {
     const [scrolledFirst, setScrolledFirst] = useState(false);
     const [scrolledSecond, setScrolledSecond] = useState(false);
@@ -28,6 +27,7 @@ const Home = () => {
         }
     }, []);
 
+
     return ( 
         <>
            
@@ -41,7 +41,7 @@ const Home = () => {
                         <p></p>
                         <Button
                             text="Start Lessons now"
-                            to=""
+                            link="/contact-me"
                             background="var(--oposite)"
                         />
                     </div>

@@ -13,7 +13,7 @@ const CTA = () => {
             <div className="btn-container">
                 <Button
                     text="Contact Me"
-                    to=""
+                    to="contact-me"
                     target="_blank"
                     background="#fff"
                 />

@@ -5,14 +5,13 @@
     margin-top: 2rem;
 
     .card {
-        padding: 1rem;
         &:hover {
             transform: scale(1.02);
         }
     }
 
     .card-image {
-        width: 150px;
+        width: 125px;
         padding: 1rem;
     }
 
@@ -24,7 +23,7 @@
         gap: 1rem;
         max-width: 400px;
         background: var(--primary);
-        padding: 2rem 1rem;
+        padding: 2rem;
         box-shadow: var(--global-shadow);
 
         h2 {
@@ -32,6 +31,7 @@
         }
         
         p {
+            margin: 0;
             text-align: center;
             text-transform: none;
             font-weight: normal;
@@ -45,9 +45,13 @@
             }
         }
         ul {
-            font-size: 18px;
+            font-weight: 600;
             padding: 0 2rem;
             line-height: 30px;
+        }
+
+        button {
+            margin-top: 1rem;
         }
     }
 }

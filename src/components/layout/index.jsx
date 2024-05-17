@@ -7,6 +7,7 @@ import Navbar from './navbar';
 import Footer from "../layout/footer"
 import './index.scss';
 import Breadcrumbs from '../breadcrumbs';
+import { ScrollRestoration } from 'react-router-dom';
 
 const Layout = () => {
     const [showButton, setShowButton] = useState(false);
@@ -27,6 +28,11 @@ const Layout = () => {
             behaviour: "smooth",
         });
     }
+
+    ScrollRestoration({
+        top: 0,
+        behaviour: "smooth"
+    })
 
     return (
         <>

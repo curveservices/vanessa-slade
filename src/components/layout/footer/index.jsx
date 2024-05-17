@@ -12,7 +12,7 @@ const Footer = () => {
                     <NavLink to="subjects">Subjects</NavLink>
                     <NavLink to="/" className="home-link">VANESSA SLADE</NavLink>
                     <NavLink to="about-me">About Me</NavLink>
-                    <NavLink tto="contact-me">Contact Me</NavLink>
+                    <NavLink to="contact-me">Contact Me</NavLink>
                 </div>
             </div>
             <hr className="div-line"></hr>

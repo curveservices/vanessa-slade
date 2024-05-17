@@ -5,9 +5,10 @@ import exam from "../../../assets/images/gcse.png";
 import CTA from "../../CTA";
 import "./index.scss";
 import style from "./index.module.css";
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import { useEffect } from "react";
 import Loader from "react-loaders";
+import { ScrollRestoration } from "react-router-dom";
 const Tuition = () => {
     const [secondAnim, setSecondAnim] = useState(false);
     const [thirdAnim, setThirdAnim] = useState(false);
@@ -25,10 +26,8 @@ const Tuition = () => {
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-
     }, [])
-
-
+    
     return (
         <>
             <div className="tuition-page">
@@ -76,7 +75,7 @@ const Tuition = () => {
                         <img src={online} alt="online tuition" className={style.onlineImg} />
                     </div>
                 </section>
-                <section className="third-section">
+                <section className={style.thirdSection}>
                     <div className={`${style.textbox} ${thirdAnim ? style.anim : style.none}`}>
                         <h1>11 Plus Exam Prep</h1>
                         <p>I specialise in 11+ exam preperation. I have an excellent student pass rate and will

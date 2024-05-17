@@ -23,7 +23,8 @@
             width: 60%;
             padding: 2rem;
             background: rgba(217, 217, 217, 0.4);
-            animation: backInDown 2s forwards;
+            opacity: 0;
+            animation: fadeIn 1s 1s forwards;
 
             .title {
                 font-size: 64px;
@@ -59,7 +60,7 @@
             }
 
             .firstAnim {
-                animation: fadeInUp 2s;
+                animation: zoomIn 1s forwards;
             }
 
             .none {
@@ -128,9 +129,8 @@
 
     .forth-section {
         .forth-inner {
-            width: 100%;
             margin: 4rem;
-            padding: 5rem;
+            padding: 4rem;
             border-radius: 20px;
             box-shadow: var(--page-shadow);
             background: var(--secondary);
@@ -147,6 +147,5 @@
     .cta {
         display: flex;
         justify-content: center;
-        background: #f2f2f2;
     }
 }

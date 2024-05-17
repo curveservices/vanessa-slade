@@ -1,12 +1,10 @@
 @import "animate.css";
 
-section {
-    display: flex;
-    box-shadow: var(--page-shadow);
-}
 
 .hero {
+    display: flex;
     padding: 2rem 0;
+    box-shadow: var(--page-shadow);
 }
 
 .textbox {
@@ -42,9 +40,16 @@ img {
 }
 
 .secondSection {
+    display: flex;
     box-shadow: var(--page-shadow);
     background: var(--secondary);
     
+}
+
+.thirdSection {
+    display: flex;
+    padding: 2rem 0;
+    box-shadow: var(--page-shadow);
 }
 .forthSection {
     width: 100%;

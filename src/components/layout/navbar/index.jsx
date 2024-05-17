@@ -120,8 +120,8 @@ const Navbar = () => {
                   <div className="text">About Me</div>
               </NavLink>
               <NavLink
-                  to="contact"
-                  title="Contact Us"
+                  to="contact-me"
+                  title="Contact Me"
                   className="contact-link"
                   activeclassname="active"
                   exact="true"
@@ -140,7 +140,7 @@ const Navbar = () => {
           <Button
               className="nav-btn"
               text="Book a Call"
-              to="https://calendly.com/immutable-studio/website-consultancy"
+              to=""
               target="_blank"
               background="#DD98B0"
               color="000"

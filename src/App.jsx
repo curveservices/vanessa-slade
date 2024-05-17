@@ -8,6 +8,7 @@ import "./App.scss";
 import Layout from "./components/layout";
 import ElevenPlus from "./components/pages/11-plus";
 import NotFound from "./components/pages/404"
+import Contact from "./components/pages/Contact";
 import English from "./components/pages/English";
 import Home from "./components/pages/Home";
 import Maths from "./components/pages/Maths";
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
         <Route path=":id/english" element={<English />} />
         <Route path=":id/maths" element={<Maths />} />
         <Route path=":id/11-plus" element={<ElevenPlus />} />
+        <Route path="contact-me" element={<Contact />} />
       </Route>
       <Route path="*" element={<NotFound/>}></Route>
     </>,
