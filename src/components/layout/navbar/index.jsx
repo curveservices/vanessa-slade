@@ -1,4 +1,4 @@
-import { faArrowDown, faBars, faClose, faEnvelope, faHouseChimney, faSchool, faSuitcase, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faBars, faBook, faClose, faEnvelope, faListNumeric, faNotEqual, faPenAlt, faPieChart, faSchool, faSuitcase, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -8,7 +8,6 @@ import "./index.scss"
 import Button from "../../button";
 
 const Navbar = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
     const [showNav, setShowNav] = useState(false);
 
     useEffect(() => {
@@ -24,10 +23,10 @@ const Navbar = () => {
     }, []);
 
   return (
-      <header className={isScrolled ? "navbar-scroll" : ""}>
+      <header>
           <nav className={showNav ? "mobile-show" : ""}>
               <NavLink to="/">
-                  <div className="title">Vanessa Slade</div>
+                  <div className="title">VS Tutoring</div>
                   <img src={logo} className="logo" alt="Vanessa slade" />
               </NavLink>
               {/* <NavLink
@@ -44,7 +43,7 @@ const Navbar = () => {
               <NavLink
                   to="tuition"
                   title="Tuition"
-                  className='tuition-link'
+                  className='link'
                   activeclassname="active"
                   exact="true"
                   onClick={() => setShowNav(false)}
@@ -53,44 +52,66 @@ const Navbar = () => {
                   <div className="text">Tuition</div>
               </NavLink>
               <NavLink
-                  to="services"
-                  title="Services"
-                  className='services-link'
+                  to="subjects"
+                  title="Subjects"
+                  className='link'
                   activeclassname="active"
                   exact="true"
                   onClick={() => setShowNav(false)}
               >
                   <FontAwesomeIcon icon={faSuitcase} className="mobile-icon" />
-                  <div className="dropdown">
-                      <div className="text">Subjects <FontAwesomeIcon icon={faArrowDown} /></div>
-                      <div className="dropdown-content">
-                          <NavLink
-                              to="gcse-prep"
-                              title="GCSE Preperation"
-                              className="gcse-link"
-                              activeclassname="active"
-                              exact="true"
-                              onClick={() => setShowNav(false)}
-                          >
-                              GCSE Preperation
-                          </NavLink>
-                          <NavLink
-                              to="gcse-prep"
-                              title="STEP Exam Preperation"
-                              className="gcse-link"
-                              activeclassname="active"
-                              exact="true"
-                              onClick={() => setShowNav(false)}
-                          >
-                              STEP Exam Preperation
-                          </NavLink>
-                      </div>
-                  </div>
+                    <div className="dropdown">
+                        <div className="text">Subjects</div>
+                        {/* <div className="dropdown-content">
+                            <div className="drop-inner">
+                                <NavLink
+                                    to="english"
+                                    title="English"
+                                    className="link"
+                                    activeclassname="active"
+                                    exact="true"
+                                    onClick={() => setShowNav(false)}
+                                >
+                                  <FontAwesomeIcon icon={faPenAlt} /> English
+                                </NavLink>
+                                <NavLink
+                                    to="maths"
+                                    title="Maths"
+                                    className="link"
+                                    activeclassname="active"
+                                    exact="true"
+                                    onClick={() => setShowNav(false)}
+                                >
+                                  <FontAwesomeIcon icon={faPieChart} /> Maths
+                                </NavLink>
+                                <NavLink
+                                    to="11-pluus"
+                                    title="11 Plus"
+                                    className="link"
+                                    activeclassname="active"
+                                    exact="true"
+                                    onClick={() => setShowNav(false)}
+                                >
+                                    11 Plus Prep
+                                </NavLink>
+                            </div>
+                        </div> */}
+                    </div>
               </NavLink>
               <NavLink
-                  to="about"
+                  to="resourses"
+                  title="Resorces"
+                  className="link"
+                  activeclassname="active"
+                  exact="true"
+                  onClick={() => setShowNav(false)}
+              >
+                Resorces
+              </NavLink>
+              <NavLink
+                  to="about-me"
                   title="About"
-                  className="about-link"
+                  className="link"
                   activeclassname="active"
                   exact="true"
                   onClick={() => setShowNav(false)}

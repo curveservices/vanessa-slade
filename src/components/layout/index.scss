@@ -3,16 +3,19 @@
     will-change: contents;
     transform-style: preserve-3d;
     font-family: "Coolvetica";
-    animation: fadeIn 2s forwards;
     color: #000;
+    animation: fadeIn 4s forwards;
     .home-page,
+    .tuition-page,
+    .subjects-page,
+    .single-subject,
+    .resorces-page,
     .about-page,
-    .serivces-page,
     .contact-page,
-    .single-service,
     .policy-page {
+        
         h1 {
-            margin: 0;
+            font-size: 40px;
         }
 
         h2 {
@@ -20,15 +23,14 @@
         }
 
         p {
-            font-size: 18px;
+            font-size: 125%;
             font-family: "Roboto";
-            font-weight: 900;
             min-width: fit-content;
-            font-weight: 600;
-            margin: 0;
+            font-weight: 500;
             padding: 0;
         }
     }
+    
 }
 
 .back-to-top {

@@ -1,0 +1,57 @@
+@import "animate.css";
+
+section {
+    display: flex;
+    box-shadow: var(--page-shadow);
+}
+
+.hero {
+    padding: 2rem 0;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 1rem 4rem;
+    padding: 4rem 0;
+}
+
+.anim {
+    animation: fadeInLeft 1s forwards;
+}
+
+.imgAnim {
+    animation: fadeInRight 1s forwards;
+}
+
+.buttonContainer {
+    display: flex;
+    margin-top: 2rem;
+    gap: 50px;
+}
+
+.imgContainer {
+    margin: 4rem 0rem;
+    padding: 5rem 2rem;
+}
+
+img {
+    width: 600px;
+    border-radius: 0%;
+}
+
+.secondSection {
+    box-shadow: var(--page-shadow);
+    background: var(--secondary);
+    
+}
+.forthSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.none {
+    opacity: 0;
+}

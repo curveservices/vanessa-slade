@@ -32,7 +32,7 @@ const Layout = () => {
         <>
             <div className='app'>
                 <Navbar />
-                <Breadcrumbs />
+                <Breadcrumbs/>
                 <main>
                     <Outlet />
                 </main>

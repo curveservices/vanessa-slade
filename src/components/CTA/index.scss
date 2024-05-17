@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem 0;
+    margin: 4rem 0;
     padding: 2rem 1rem;
-    box-shadow: var(--page-shadow);
+    box-shadow: var(--global-shadow);
 
     .text-container {
         width: 50%;

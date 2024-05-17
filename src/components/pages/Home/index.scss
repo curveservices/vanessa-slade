@@ -1,4 +1,5 @@
 .home-page {
+    
     .hero {
         display: flex;
         justify-content: space-between;
@@ -7,7 +8,9 @@
         background-size: cover;
         background-attachment: fixed;
         box-shadow: var(--page-shadow);
-        height: 100vmin;
+        height: 100vh;
+        font-family: "Coolvetica";
+        
 
         .text-container {
             position: absolute;
@@ -15,21 +18,23 @@
             flex-direction: column;
             align-items: center;
             gap: 1rem;
-            top: 8%;
+            top: 6%;
             left: 20%;
             width: 60%;
             padding: 2rem;
             background: rgba(217, 217, 217, 0.4);
-            animation: backInDown 1s forwards;
+            animation: backInDown 2s forwards;
 
             .title {
                 font-size: 64px;
                 text-align: center;
+                margin: 0;
             }
 
             .sub-title {
                 font-size: 24px;
                 text-align: center;
+                margin: 0;
             }
 
             button {
@@ -40,9 +45,8 @@
     }
 
     .second-section {
-
         .second-inner {
-            margin: 2rem 0rem;
+            margin: 3rem 0rem 0rem;
             padding: 4rem;
             box-shadow: var(--page-shadow);
             background: var(--secondary);
@@ -54,52 +58,8 @@
                 gap: 20px;
             }
 
-            .card-container {
-                display: flex;
-                justify-content: space-evenly;
-                margin: 2rem;
-
-                .card {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 1rem;
-                    &:hover {
-                        transform: scale(1.02);
-                        transition: all ease-in-out;
-                    }
-                }
-
-                .card-image {
-                    width: 300px;
-                    height: 270px;
-                    object-fit: cover;
-                    box-shadow: var(--global-shadow);
-                }
-
-                .text-container {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                    background: var(--primary);
-                    max-width: 300px;
-                    padding: 1rem;
-                    box-shadow: var(--global-shadow);
-
-                    h3 {
-                        text-transform: uppercase;
-                    }
-
-                    a {
-                        color: var(--oposite);
-                        &:hover {
-                            color: var(--secondary);
-                        }
-                    }
-                }
-            }
-
             .firstAnim {
-                animation: fadeInUp 1s forwards;
+                animation: fadeInUp 2s;
             }
 
             .none {
@@ -113,7 +73,7 @@
             display: flex;
             flex-direction: column;
             gap: 2rem;
-            margin: 2rem 0rem;
+            margin: 3rem 0rem 0rem;
             padding: 4rem 8rem;
             box-shadow: var(--page-shadow);
             background: var(--secondary);
@@ -121,6 +81,7 @@
             .work-container {
                 display: flex;
                 font-size: 48px;
+                box-shadow: var(--global-shadow);
 
                 .img {
                     width: 400px;
@@ -136,11 +97,18 @@
             .about-container {
                 display: flex;
                 gap: 4rem;
+               
 
                 .about-work {
                     max-width: 600px;
                     padding: 1rem 2rem 3rem 2rem;
                     background: var(--primary);
+                    box-shadow: var(--global-shadow);
+
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                    
                 }
 
                 .left {
@@ -160,10 +128,11 @@
 
     .forth-section {
         .forth-inner {
+            width: 100%;
             margin: 4rem;
             padding: 5rem;
-            height: 300px;
             border-radius: 20px;
+            box-shadow: var(--page-shadow);
             background: var(--secondary);
         }
 
@@ -176,6 +145,8 @@
     }
 
     .cta {
+        display: flex;
+        justify-content: center;
         background: #f2f2f2;
     }
 }
