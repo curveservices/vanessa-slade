@@ -10,7 +10,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../../assets/images/logo.png";
 import logo1 from "../../../assets/images/logobgr1.png";
 import "./index.scss";
 import Button from "../../button";
