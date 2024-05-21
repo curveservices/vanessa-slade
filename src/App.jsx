@@ -7,14 +7,15 @@ import {
 import "./App.scss";
 import Layout from "./components/layout";
 import ElevenPlus from "./components/pages/11-plus";
-import NotFound from "./components/pages/404"
+import NotFound from "./components/pages/404";
+import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import English from "./components/pages/English";
 import Home from "./components/pages/Home";
 import Maths from "./components/pages/Maths";
+import Resources from "./components/pages/Resorces";
 import Subjects from "./components/pages/Subjects";
 import Tuition from "./components/pages/Tuition";
-
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,12 +24,14 @@ const router = createBrowserRouter(
         <Route index element={<Home />} />
         <Route path="tuition" element={<Tuition />} />
         <Route path="subjects" element={<Subjects />} />
+        <Route path="resources" element={<Resources />} />
         <Route path=":id/english" element={<English />} />
         <Route path=":id/maths" element={<Maths />} />
         <Route path=":id/11-plus" element={<ElevenPlus />} />
+        <Route path="about-me" element={<About />} />
         <Route path="contact-me" element={<Contact />} />
       </Route>
-      <Route path="*" element={<NotFound/>}></Route>
+      <Route path="*" element={<NotFound />}></Route>
     </>,
   ),
 );

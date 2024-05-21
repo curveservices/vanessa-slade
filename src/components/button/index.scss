@@ -1,32 +1,31 @@
 button {
-    text-transform: capitalize;
-    letter-spacing: 4px;
-    font-family: "Roboto";
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    width: 200px;
-    padding: 1rem;
-    border-radius: 5px;
-    border: none;
-    box-shadow: var(--button-shadow);
-    cursor: pointer;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  font-family: "Roboto";
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: var(--button-shadow);
+  cursor: pointer;
 
-    &:hover {
-        transform: translateY(-3px);
-        background-color: rgb(179, 179, 179);
-    }
-
+  &:hover {
+    transform: translateY(-3px);
+    background: rgb(179, 179, 179);
+  }
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 920px) {
-    button {
-        width: 150px;
-        font-size: 10px;
-        margin: 0;
-    }
+  button {
+    width: 150px;
+    font-size: 10px;
+    margin: 0;
+  }
 }

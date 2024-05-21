@@ -1,62 +1,60 @@
 @import "animate.css";
 
-
 .hero {
-    display: flex;
-    padding: 2rem 0;
-    box-shadow: var(--page-shadow);
+  display: flex;
+  box-shadow: var(--page-shadow);
 }
 
 .textbox {
-    display: flex;
-    flex-direction: column;
-    max-width: 50%;
-    margin: 1rem 4rem;
-    padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 0rem 4rem;
+  padding: 2rem 0;
 }
 
 .anim {
-    animation: fadeInLeft 1s forwards;
+  animation: fadeInLeft 1s forwards;
 }
 
 .imgAnim {
-    animation: fadeInRight 1s forwards;
+  animation: fadeInRight 1s forwards;
 }
 
 .buttonContainer {
-    display: flex;
-    margin-top: 2rem;
-    gap: 50px;
+  display: flex;
+  margin-top: 2rem;
+  gap: 50px;
 }
 
 .imgContainer {
-    margin: 4rem 0rem;
-    padding: 5rem 2rem;
+  margin: 4rem 0rem;
+  padding: 5rem 2rem;
 }
 
 img {
-    width: 600px;
-    border-radius: 0%;
+  width: 600px;
+  border-radius: 0%;
 }
 
 .secondSection {
-    display: flex;
-    box-shadow: var(--page-shadow);
-    background: var(--secondary);
-    
+  display: flex;
+  margin: 3rem 0;
+  box-shadow: var(--page-shadow);
+  background: var(--secondary);
 }
 
 .thirdSection {
-    display: flex;
-    padding: 2rem 0;
-    box-shadow: var(--page-shadow);
+  display: flex;
+  padding: 0rem 0;
+  box-shadow: var(--page-shadow);
 }
 .forthSection {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .none {
-    opacity: 0;
+  opacity: 0;
 }

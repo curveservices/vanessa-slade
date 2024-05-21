@@ -1,8 +1,12 @@
 .subjects-page {
-    margin: 0;
-    padding: 6rem 2rem;
+  margin: 0;
+  padding: 2rem;
+  .hero-title {
+    padding-left: 1rem;
+  }
 
-    .hero {
-        animation: zoomIn 0.5s forwards;
-    }
+  .hero {
+    animation: zoomIn 0.5s forwards;
+    
+  }
 }
