@@ -1,13 +1,13 @@
 @import "animate.css";
 
 .single-subject {
-  position: relative;
   margin: 0;
-  padding: 6rem 0rem;
+  padding: 0rem;
 }
 
 .hero {
-  padding: 6rem 4rem;
+  padding: 1rem 4rem 5rem;
+  background: var(--primary);
   box-shadow: none;
 }
 
@@ -18,7 +18,6 @@
 }
 
 .textbox {
-  margin-top: 2rem;
   animation: fadeInLeft 2s forwards;
 }
 
@@ -32,8 +31,9 @@ hr {
   animation: fadeInRight 2s forwards;
 }
 
-img {
-  width: 300px;
+.image {
+  width: 600px;
+  border-radius: 10px;
 }
 .buttonContainer {
   display: flex;

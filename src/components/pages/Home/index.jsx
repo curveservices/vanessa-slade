@@ -1,24 +1,32 @@
 import { NavLink } from "react-router-dom";
 import Button from "../../button";
 import img from "../../../assets/images/vanessa.jpg";
+import english from "../../../assets/images/home-img.jpg";
+import maths from "../../../assets/images/ks2.png";
+import exam from "../../../assets/images/gcse.png";
 import CTA from "../../CTA";
 import { useState, useEffect } from "react";
 import WorkCard from "../../Cards/work-card";
 import Loader from "react-loaders";
-import { Carousel } from "nuka-carousel";
 import "./index.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faComputer, faHouseChimney } from "@fortawesome/free-solid-svg-icons";
+import SubjectCards from "../../Cards/subjects-card";
 
 const Home = () => {
   const [scrolledFirst, setScrolledFirst] = useState(false);
-  const [scrolledSecond, setScrolledSecond] = useState(false);
+  const [scrolledTuition, setScrolledTuition] = useState(false);
+  const [scrolledSubjects, setScrolledSubjects] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollCards = window.scrollY;
-      const secondScroll = window.scrollY;
+      const thirdScroll = window.scrollY;
+      const tuitionScroll = window.scrollY;
 
-      setScrolledSecond(secondScroll > 1300);
-      setScrolledFirst(scrollCards > 200);
+      setScrolledFirst(scrollCards > 550);
+      setScrolledSubjects(thirdScroll > 1200);
+      setScrolledTuition(tuitionScroll > 2400);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -33,10 +41,10 @@ const Home = () => {
         <section className="hero">
           <div className="text-container">
             <h1 className="title">Private or Group Tutoring</h1>
-            <p className="sub-title">
-              I provide online or in person tutoring for key stage 2 / 3 and for
-              GCSE prep{" "}
-            </p>
+            <h2 className="sub-title">
+              I provide online or in person tutoring for key stage 1 / 2 and for
+              11 Plus prep
+            </h2>
             <p></p>
             <Button
               text="Start Lessons now"
@@ -49,9 +57,7 @@ const Home = () => {
           <div className="second-inner">
             <div className="title">
               <h1>Which level matches your needs?</h1>
-              <p>I tutor all levels online on in person</p>
             </div>
-
             <div
               className={`card-container ${scrolledFirst ? "firstAnim" : "none"}`}
             >
@@ -60,7 +66,42 @@ const Home = () => {
           </div>
         </section>
         <section className="third-section">
-          <div className="third-inner">
+          <div
+            className={`textbox ${scrolledSubjects ? "animSubjects" : "none"}`}
+          >
+            <h1 className="title">Subjects</h1>
+            <p>
+              I offer home and online tuition. I will assses the needs of each
+              student and design a learning programme that will ensure success.
+            </p>
+            <div className="button-container">
+              <Button text="Contact me" />
+              <Button
+                text="Resources"
+                link="resources"
+                background="var(--oposite)"
+              />
+            </div>
+          </div>
+          <div
+            className={`subject-cards ${scrolledSubjects ? "animSubjects" : "none"}`}
+          >
+            <SubjectCards
+              title1="English Tuition"
+              src1={english}
+              link1="english"
+              title2="Maths Tuition"
+              src2={maths}
+              link2="maths"
+              title3="11 Plus Prep"
+              src3={exam}
+              link3="11-plus"
+              background="var(--secondary)"
+            />
+          </div>
+        </section>
+        <section className="forth-section">
+          <div className="forth-inner">
             <NavLink to="tuition" className="work-container">
               <img src={img} alt="vanessa slade" className="img" />
               <h3 className="work-title">
@@ -68,24 +109,36 @@ const Home = () => {
               </h3>
             </NavLink>
             <div className="about-container">
-              <div
-                className={`about-work ${scrolledSecond ? "left" : "none"} `}
-              >
-                <h3>Something about tutoring</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore...
-                </p>
-              </div>
-              <div
-                className={`about-work ${scrolledSecond ? "right" : "none"}`}
-              >
-                <h3>Something about tutoring</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore...
-                </p>
-              </div>
+              <NavLink to="tuition">
+                <div
+                  className={`about-work ${scrolledTuition ? "left" : "none"} `}
+                >
+                  <FontAwesomeIcon icon={faHouseChimney} className="icon" />
+                  <div className="text">
+                    <h2>Home Tuition</h2>
+                    <p>
+                      If you live in the surrounding areas of Lewisham including
+                      Dulwich, Peckham &amp; Camberwell, I can travel to you. I
+                      will deliver sessions in the comfort of your own home.
+                    </p>
+                  </div>
+                </div>
+              </NavLink>
+              <NavLink to="tuition">
+                <div
+                  className={`about-work ${scrolledTuition ? "right" : "none"}`}
+                >
+                  <FontAwesomeIcon icon={faComputer} className="icon" />
+                  <div className="text">
+                    <h2>Online Tuition</h2>
+                    <p>
+                      I offer online tuition over various platforms like google
+                      meet and skype so your child can access the same quality
+                      of teaching as with face to face home tutoring lessons.
+                    </p>
+                  </div>
+                </div>
+              </NavLink>
             </div>
           </div>
         </section>

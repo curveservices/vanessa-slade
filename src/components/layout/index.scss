@@ -2,14 +2,19 @@
   position: relative;
   will-change: contents;
   transform-style: preserve-3d;
+  background-image: url("../../assets/images/background.webp");
+  background-repeat: none;
+  background-position-x: center;
+  background-attachment: fixed;
   font-family: "Coolvetica";
   color: #000;
-  animation: fadeIn 4s forwards;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
   .home-page,
   .tuition-page,
   .subjects-page,
   .single-subject,
-  .resorces-page,
+  .resources-page,
   .about-page,
   .contact-page,
   .policy-page {
@@ -56,24 +61,28 @@
 
 @media screen and (max-width: 920px) {
   .app {
-    background-image: none;
-
     .home-page,
+    .tuition-page,
+    .subjects-page,
+    .single-subject,
+    .resorces-page,
     .about-page,
-    .serivces-page,
-    .single-service,
+    .contact-page,
     .policy-page {
       h1 {
-        font-size: 24px;
-      }
-
-      h2 {
-        font-size: 18px;
+        font-size: initial;
       }
 
       p {
-        font-size: 14px;
+        font-size: 12px;
       }
     }
+  }
+  .back-to-top {
+    bottom: 1;
+    font-size: 18px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
   }
 }

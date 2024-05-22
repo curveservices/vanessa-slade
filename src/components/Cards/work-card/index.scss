@@ -2,11 +2,10 @@
   display: flex;
   justify-content: space-evenly;
   gap: 50px;
-  margin-top: 2rem;
 
   .card {
     &:hover {
-      transform: scale(1.02);
+      transform: scale(1.03);
     }
   }
 
@@ -33,8 +32,6 @@
     p {
       margin: 0;
       text-align: center;
-      text-transform: none;
-      font-weight: normal;
     }
 
     a {
@@ -52,6 +49,45 @@
 
     button {
       margin-top: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .card-container {
+    align-items: center;
+    gap: 20px;
+
+    .card-image {
+      width: 75px;
+      padding-bottom: 1rem;
+    }
+
+    .text-container {
+      gap: 0rem;
+      max-width: 300px;
+      padding: 1rem;
+
+      h2 {
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      ul {
+        font-weight: 500;
+        padding: 0rem;
+        line-height: initial;
+        list-style: none;
+        text-align: center;
+      }
+
+      button {
+        margin-top: 1rem;
+        width: 200px;
+      }
     }
   }
 }

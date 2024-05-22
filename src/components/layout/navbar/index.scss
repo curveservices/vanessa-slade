@@ -4,10 +4,9 @@ header {
   align-items: center;
   background: var(--secondary);
   width: 100%;
-  height: 85px;
   letter-spacing: 3px;
   margin: 0;
-  padding: 0rem 2rem;
+  padding: 1rem;
   font-family: "Coolvetica";
   transition: all 0.3s;
   cursor: pointer;
@@ -28,18 +27,14 @@ header {
   }
 
   .logo {
-    width: 250px;
-    height: 100px;
+    width: 150px;
     border-radius: 10px;
   }
 
   nav {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    gap: 3rem;
-    text-align: center;
-    padding: 20px 10px;
+    gap: 2.5rem;
 
     .dropdown-content {
       display: none;
@@ -86,11 +81,7 @@ header {
 
 @media screen and (max-width: 920px) {
   header {
-    padding: 0rem;
-
-    .title {
-      display: none;
-    }
+    padding: 0.5rem;
 
     .logo {
       display: block;
@@ -104,31 +95,38 @@ header {
 
     nav {
       position: absolute;
-      top: 5px;
+      top: 0;
       right: 0;
       width: 100%;
-      height: 100%;
-      background: var(--primary);
+      background: var(--secondary);
       padding-top: 30px;
       padding-right: 40px;
       gap: 2rem;
       z-index: 2;
-      margin: 0;
-
-      .text {
-        display: none;
-      }
 
       .mobile-icon {
-        display: flex;
+        display: block;
+        font-size: 24px;
       }
 
       &.mobile-show {
         display: flex;
-        justify-content: space-evenly;
-        padding-bottom: 15px;
-        height: 60px;
+        flex-direction: column;
+        gap: 50px;
+        padding: 5rem 0;
+        height: 100vh;
         animation: bounceInRight 1s;
+        .text {
+          text-align: center;
+          display: block;
+          font-size: 24px;
+        }
+        .menu-container {
+          display: flex;
+          align-items: center;
+          width: 200px;
+          gap: 20px;
+        }
       }
     }
   }
@@ -142,12 +140,14 @@ header {
     position: absolute;
     top: 20px;
     right: 35px;
+    font-size: 24px;
   }
 
   .close-icon {
     display: block;
     position: absolute;
-    right: 25px;
-    top: 0;
+    right: 35px;
+    top: 2.5%;
+    font-size: 24px;
   }
 }

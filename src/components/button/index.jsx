@@ -6,6 +6,7 @@ const Button = (props) => {
     background: props.background,
     color: props.color,
     fontSize: props.fontSize + "px",
+    width: props.width + "px",
   };
 
   return (

@@ -2,17 +2,17 @@
 
 .hero {
   display: flex;
+  background: var(--primary);
   box-shadow: var(--page-shadow);
+  margin: 0 0 4rem;
 }
 
 .textbox {
   display: flex;
   flex-direction: column;
   max-width: 50%;
-  margin: 0rem 4rem;
-  padding: 2rem 0;
+  padding: 2rem 4rem;
 }
-
 .anim {
   animation: fadeInLeft 1s forwards;
 }
@@ -21,25 +21,19 @@
   animation: fadeInRight 1s forwards;
 }
 
-.buttonContainer {
-  display: flex;
-  margin-top: 2rem;
-  gap: 50px;
-}
-
 .imgContainer {
   margin: 4rem 0rem;
   padding: 5rem 2rem;
 }
 
-img {
+.tuitionImg {
   width: 600px;
-  border-radius: 0%;
+  border-radius: 10px;
 }
 
 .secondSection {
   display: flex;
-  margin: 3rem 0;
+  margin: 4rem 0;
   box-shadow: var(--page-shadow);
   background: var(--secondary);
 }
@@ -47,14 +41,56 @@ img {
 .thirdSection {
   display: flex;
   padding: 0rem 0;
+  background: var(--primary);
   box-shadow: var(--page-shadow);
 }
+
 .forthSection {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .none {
   opacity: 0;
+}
+
+@media screen and (max-width: 920px) {
+  .hero {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .textbox {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 2rem;
+  }
+
+  .anim {
+    animation: fadeInLeft 1s forwards;
+  }
+
+  .imgAnim {
+    animation: fadeInRight 1s forwards;
+  }
+
+  .imgContainer {
+    margin: 0rem;
+    padding: 1rem 2rem;
+  }
+
+  .tuitionImg {
+    width: 100%;
+  }
+
+  .secondSection {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .thirdSection {
+    flex-direction: column;
+    margin: 0;
+  }
 }

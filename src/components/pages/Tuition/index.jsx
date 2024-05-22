@@ -3,9 +3,10 @@ import tuition from "../../../assets/images/ks2.png";
 import online from "../../../assets/images/ks3.png";
 import exam from "../../../assets/images/gcse.png";
 import CTA from "../../CTA";
-import style from "./index.module.css";
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
+import style from "./index.module.css";
+
 const Tuition = () => {
   const [secondAnim, setSecondAnim] = useState(false);
   const [thirdAnim, setThirdAnim] = useState(false);
@@ -47,12 +48,16 @@ const Tuition = () => {
               professionalism.
             </p>
             <div className={style.buttonContainer}>
-              <Button text="Get in touch" background="var(--oposite)" />
-              <Button text="View Subjects" />
+              <Button
+                text="Book Lessons"
+                link="/contact-me"
+                background="var(--oposite)"
+                width="200"
+              />
             </div>
           </div>
           <div className={`${style.imgContainer} ${style.imgAnim}`}>
-            <img src={tuition} alt="vanessa slade" />
+            <img src={tuition} alt="tuition" className={style.tuitionImg} />
           </div>
         </section>
         <section className={style.secondSection}>
@@ -61,9 +66,9 @@ const Tuition = () => {
           >
             <h1>Online Tuition £35</h1>
             <p>
-              Our state of the art online classroom means that you can access
-              the same quality of teaching as with face to face home tutoring
-              lessons.
+              I offer online tuition over various platforms like google meet and
+              skype so your child can access the same quality of teaching as
+              with face to face home tutoring lessons.
             </p>
             <p>
               The added benefit is that lessons can be recorded so that you can
@@ -73,8 +78,12 @@ const Tuition = () => {
             </p>
 
             <div className={style.buttonContainer}>
-              <Button text="Get in touch" background="var(--oposite)" />
-              <Button text="View Subjects" />
+              <Button
+                text="Book Lessons"
+                link="/contact-me"
+                background="var(--oposite)"
+                width="200"
+              />
             </div>
           </div>
           <div
@@ -83,7 +92,7 @@ const Tuition = () => {
             <img
               src={online}
               alt="online tuition"
-              className={style.onlineImg}
+              className={style.tuitionImg}
             />
           </div>
         </section>
@@ -104,16 +113,21 @@ const Tuition = () => {
               the specific local requirements.
             </p>
             <div className={style.buttonContainer}>
-              <Button text="Get in touch" background="var(--oposite)" />
-              <Button text="View Subjects" />
+              <Button
+                text="Book Lessons"
+                link="/contact-me"
+                background="var(--oposite)"
+                width="200"
+              />
             </div>
           </div>
           <div
             className={`${style.imgContainer} ${thirdAnim ? style.imgAnim : style.none}`}
           >
-            <img src={exam} alt="11 Plus" />
+            <img src={exam} alt="11 Plus" className={style.tuitionImg} />
           </div>
         </section>
+
         <section className={style.forthSection}>
           <CTA />
         </section>

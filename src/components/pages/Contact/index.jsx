@@ -67,14 +67,16 @@ const Contact = () => {
           </div>
         </section>
         <div className="info-map">
-          VS TUTORING
+          TELEGRAPH HILL TUTORING
           <br />
           London, SE14
           <br />
           United Kingdom
           <br />
           <span>
-            <a href="mailto:hello@immutable-studio.com">hello@vstutoring.com</a>
+            <a href="mailto:hello@immutable-studio.com">
+              hello@telegraphhilltutoring.com
+            </a>
           </span>
         </div>
         <div className="map-wrap">

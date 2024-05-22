@@ -1,12 +1,10 @@
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Outlet } from "react-router";
 import Navbar from "./navbar";
 import Footer from "../layout/footer";
 import "./index.scss";
-import Breadcrumbs from "../breadcrumbs";
 import { ScrollRestoration } from "react-router-dom";
 
 const Layout = () => {
@@ -38,7 +36,6 @@ const Layout = () => {
     <>
       <div className="app">
         <Navbar />
-        <Breadcrumbs />
         <main>
           <Outlet />
         </main>

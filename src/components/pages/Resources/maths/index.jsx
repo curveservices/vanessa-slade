@@ -1,4 +1,3 @@
-import Loader from "react-loaders";
 import SubjectCards from "../../../Cards/subjects-card";
 import english from "../../../../assets/images/home-img.jpg";
 import maths from "../../../../assets/images/ks2.png";
@@ -6,20 +5,22 @@ import exam from "../../../../assets/images/gcse.png";
 import CTA from "../../../CTA";
 import ResourceTable from "../../../resourceTable";
 import "../index.scss";
+import Loader from "react-loaders";
 
-const EnglishPapers = () => {
+const MathsPapers = () => {
   return (
     <>
       <section className="table-page">
         <div className="hero">
           <div className="table">
             <ResourceTable
-              name="english-11plus"
-              header="11 Plus English "
-              title="11+ English Independent &amp; Grammar School Past Exam Papers"
+              name="maths"
+              header="11 Plus Maths"
+              title="11+ Maths Independent &amp; Grammar School Past Exam Papers"
             />
           </div>
         </div>
+
         <section className="second-section">
           <SubjectCards
             title1="English Tuition"
@@ -43,4 +44,4 @@ const EnglishPapers = () => {
   );
 };
 
-export default EnglishPapers;
+export default MathsPapers;

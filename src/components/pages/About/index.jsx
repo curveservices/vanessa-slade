@@ -1,10 +1,7 @@
 import "./index.scss";
 
 const About = () => {
-    return ( 
-        <>
-        </>
-     );
-}
- 
+  return <></>;
+};
+
 export default About;

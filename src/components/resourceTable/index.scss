@@ -1,20 +1,42 @@
 table {
-    border-collapse: collapse;
-    width: 100%;
-    line-height: 2;
+  border-collapse: collapse;
+  width: 100%;
+  line-height: 2;
 }
 
 td,
 th {
-    border: 1px solid var(--secondary);
-    text-align: left;
-    padding: 8px;
+  border: 1px solid var(--secondary);
+  text-align: left;
+  padding: 8px;
 }
 
 tr:nth-child(even) {
-    background: var(--secondary);
+  background: var(--secondary);
 }
 
 .header-title {
+  padding: 1rem;
+}
+@media screen and (max-width: 920px) {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    line-height: 1;
+  }
+
+  td,
+  th {
+    border: 1px solid var(--secondary);
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background: var(--secondary);
+  }
+
+  .header-title {
     padding: 1rem;
+  }
 }

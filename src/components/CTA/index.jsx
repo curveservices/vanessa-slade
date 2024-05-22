@@ -13,11 +13,15 @@ const CTA = () => {
       <div className="btn-container">
         <Button
           text="Contact Me"
-          to="contact-me"
-          target="_blank"
+          link="/contact-me"
           background="var(--button-default)"
         />
-        <Button text="Book a Call" to="" background="var(--oposite)" />
+        <Button
+          text="Book a Call"
+          link=""
+          target="_blank"
+          background="var(--oposite)"
+        />
       </div>
     </div>
   );

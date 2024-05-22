@@ -1,9 +1,10 @@
 import {
   faBars,
+  faBookOpenReader,
   faClose,
   faEnvelope,
+  faHouseChimney,
   faSchool,
-  faSuitcase,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,6 +14,7 @@ import { NavLink } from "react-router-dom";
 import logo1 from "../../../assets/images/logobgr1.png";
 import "./index.scss";
 import Button from "../../button";
+import { faReact } from "@fortawesome/free-brands-svg-icons";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -37,17 +39,19 @@ const Navbar = () => {
         </div>
       </NavLink>
       <nav className={showNav ? "mobile-show" : ""}>
-        {/* <NavLink
-                  to="/"
-                  title="Home"
-                  className="home-link"
-                  activeclassname="active"
-                  exact="true"
-                  onClick={() => setShowNav(false)}
-              >
-                  <FontAwesomeIcon icon={faHouseChimney} className="mobile-icon" />
-                  <div className="text">Home</div>
-              </NavLink> */}
+        <NavLink
+          to="/"
+          title="Home"
+          className="home-link"
+          activeclassname="active"
+          exact="true"
+          onClick={() => setShowNav(false)}
+        >
+          <div className="menu-container">
+            <FontAwesomeIcon icon={faHouseChimney} className="mobile-icon" />
+            <div className="text">Home</div>
+          </div>
+        </NavLink>
         <NavLink
           to="tuition"
           title="Tuition"
@@ -56,8 +60,10 @@ const Navbar = () => {
           exact="true"
           onClick={() => setShowNav(false)}
         >
-          <FontAwesomeIcon icon={faSchool} className="mobile-icon" />
-          <div className="text">Tuition</div>
+          <div className="menu-container">
+            <FontAwesomeIcon icon={faSchool} className="mobile-icon" />
+            <div className="text">Tuition</div>
+          </div>
         </NavLink>
         <NavLink
           to="subjects"
@@ -67,43 +73,9 @@ const Navbar = () => {
           exact="true"
           onClick={() => setShowNav(false)}
         >
-          <FontAwesomeIcon icon={faSuitcase} className="mobile-icon" />
-          <div className="dropdown">
+          <div className="menu-container">
+            <FontAwesomeIcon icon={faBookOpenReader} className="mobile-icon" />
             <div className="text">Subjects</div>
-            {/* <div className="dropdown-content">
-                            <div className="drop-inner">
-                                <NavLink
-                                    to="english"
-                                    title="English"
-                                    className="link"
-                                    activeclassname="active"
-                                    exact="true"
-                                    onClick={() => setShowNav(false)}
-                                >
-                                  <FontAwesomeIcon icon={faPenAlt} /> English
-                                </NavLink>
-                                <NavLink
-                                    to="maths"
-                                    title="Maths"
-                                    className="link"
-                                    activeclassname="active"
-                                    exact="true"
-                                    onClick={() => setShowNav(false)}
-                                >
-                                  <FontAwesomeIcon icon={faPieChart} /> Maths
-                                </NavLink>
-                                <NavLink
-                                    to="11-pluus"
-                                    title="11 Plus"
-                                    className="link"
-                                    activeclassname="active"
-                                    exact="true"
-                                    onClick={() => setShowNav(false)}
-                                >
-                                    11 Plus Prep
-                                </NavLink>
-                            </div>
-                        </div> */}
           </div>
         </NavLink>
         <NavLink
@@ -114,7 +86,10 @@ const Navbar = () => {
           exact="true"
           onClick={() => setShowNav(false)}
         >
-          Resources
+          <div className="menu-container">
+            <FontAwesomeIcon icon={faReact} className="mobile-icon" />
+            <div className="text">Resources</div>
+          </div>
         </NavLink>
         <NavLink
           to="about-me"
@@ -124,8 +99,10 @@ const Navbar = () => {
           exact="true"
           onClick={() => setShowNav(false)}
         >
-          <FontAwesomeIcon icon={faUser} className="mobile-icon" />
-          <div className="text">About Me</div>
+          <div className="menu-container">
+            <FontAwesomeIcon icon={faUser} className="mobile-icon" />
+            <div className="text">About Me</div>
+          </div>
         </NavLink>
         <NavLink
           to="contact-me"
@@ -135,12 +112,14 @@ const Navbar = () => {
           exact="true"
           onClick={() => setShowNav(false)}
         >
-          <FontAwesomeIcon icon={faEnvelope} className="mobile-icon" />
-          <div className="text">Contact Me</div>
+          <div className="menu-container">
+            <FontAwesomeIcon icon={faEnvelope} className="mobile-icon" />
+            <div className="text">Contact Me</div>
+          </div>
         </NavLink>
         <FontAwesomeIcon
           icon={faClose}
-          size="2x"
+          size="1x"
           className="close-icon"
           onClick={() => setShowNav(false)}
         />
@@ -156,7 +135,7 @@ const Navbar = () => {
 
       <FontAwesomeIcon
         icon={faBars}
-        size="2x"
+        size="1x"
         className="hamburger"
         onClick={() => setShowNav(true)}
       />

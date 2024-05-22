@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import Button from "../../button";
@@ -33,8 +32,16 @@ const SingleSubject = (props) => {
               <hr />
               <p>{props.heroP}</p>
               <div className={style.buttonContainer}>
-                <Button text="start now" background="var(--button-default)" />
-                <Button text="Book a call" background="var(--oposite)" />
+                <Button
+                  text="start now"
+                  link="/contact"
+                  background="var(--button-default)"
+                />
+                <Button
+                  text="Book a call"
+                  link=""
+                  background="var(--oposite)"
+                />
               </div>
             </div>
             <div className={style.imgContainer}>
@@ -76,12 +83,12 @@ const SingleSubject = (props) => {
               <Button
                 text="Resources"
                 background="var(--button-default)"
-                link="resources"
+                link="/resources"
               />
               <Button
                 text="Contact Me"
                 background="var(--oposite)"
-                link="contact"
+                link="/contact-me"
               />
             </div>
           </div>
@@ -96,12 +103,12 @@ const SingleSubject = (props) => {
               <Button
                 text="Resources"
                 background="var(--button-default)"
-                link="resources"
+                link="/resources"
               />
               <Button
                 text="Contact Me"
                 background="var(--oposite)"
-                link="contact"
+                link="/contact-me"
               />
             </div>
           </div>
