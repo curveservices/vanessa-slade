@@ -39,7 +39,7 @@ const ResourceCards = (props) => {
           />
         </div>
       </Link>
-      <Link>
+      <Link to="verbal">
         <div className="resourceCard">
           <img src={bulb} alt="light bulb" className="icon" />
           <h2>11+ Verbal Reasoning Papers</h2>
@@ -54,7 +54,7 @@ const ResourceCards = (props) => {
           />
         </div>
       </Link>
-      <Link>
+      <Link to="non-verbal">
         <div className="resourceCard">
           <img src={brain} alt="book brain" className="icon" />
           <h2>11+ Non-Verbal Reasoning Papers</h2>

@@ -5,16 +5,16 @@ import CTA from "../../CTA";
 import style from "./index.module.css";
 
 const SingleSubject = (props) => {
-  const [scrolled, setScrolled] = useState(false);
-  const [secondScroll, setSecondScroll] = useState(false);
+  const [scrolled, setScrolled] = useState(true);
+  const [secondScroll, setSecondScroll] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
       const scroll1 = window.scrollY;
       const scroll2 = window.scrollY;
 
-      setScrolled(scroll1 > 300);
-      setSecondScroll(scroll2 > 1000);
+      setScrolled(scroll1 > 100);
+      setSecondScroll(scroll2 > 700);
     };
     window.addEventListener("scroll", handleScroll);
     return () => {

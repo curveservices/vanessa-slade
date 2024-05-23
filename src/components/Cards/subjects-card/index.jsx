@@ -9,7 +9,7 @@ const SubjectCards = (props) => {
   };
 
   return (
-    <div className="card-container">
+    <div className="subject-card-container">
       <NavLink to={props.link1}>
         <div className="subjectCard">
           <h2 className="title" style={cardStyle}>

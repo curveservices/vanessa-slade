@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 4rem;
-    padding: 1rem 4rem 4rem;
+    padding: 0rem 4rem 2rem;
     box-shadow: var(--page-shadow);
     background: var(--secondary);
 
@@ -17,13 +17,13 @@
 
       .hero-title {
         opacity: 0;
-        animation: fadeInLeft 3s forwards;
+        animation: fadeInLeft 1s forwards;
       }
 
       p,
       .button-container {
         opacity: 0;
-        animation: fadeInUp 3s forwards;
+        animation: fadeInUp 2s forwards;
       }
 
       .button-container {
@@ -34,13 +34,15 @@
   }
   .resource-cards {
     padding: 1rem 4rem;
+    opacity: 0;
+    animation: fadeInUp 2s 1 forwards;
   }
 }
 
 @media screen and (max-width: 920px) {
   .resources-page {
     .hero {
-      padding: 1rem 4rem 1rem;
+      padding: 0rem 4rem 1rem;
 
       .textbox {
         max-width: 100%;

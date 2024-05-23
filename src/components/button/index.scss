@@ -2,6 +2,7 @@ button {
   text-transform: capitalize;
   letter-spacing: 4px;
   font-family: "Roboto";
+  font-size: 16px;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
@@ -24,6 +25,7 @@ a {
 
 @media screen and (max-width: 920px) {
   button {
-    width: 150px;
+    width: 140px;
+    font-size: 11px;
   }
 }

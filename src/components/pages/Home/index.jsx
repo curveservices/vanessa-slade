@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 import Button from "../../button";
 import img from "../../../assets/images/vanessa.jpg";
-import english from "../../../assets/images/home-img.jpg";
-import maths from "../../../assets/images/ks2.png";
-import exam from "../../../assets/images/gcse.png";
+import english from "../../../assets/images/home-img.webp";
+import maths from "../../../assets/images/ks2.webp";
+import exam from "../../../assets/images/gcse.webp";
 import CTA from "../../CTA";
 import { useState, useEffect } from "react";
 import WorkCard from "../../Cards/work-card";

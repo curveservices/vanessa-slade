@@ -1,5 +1,5 @@
 import SingleSubject from "../singleSubject";
-import home from "../../../assets/images/home-img.jpg";
+import home from "../../../assets/images/home-img.webp";
 
 const English = () => {
   return (

@@ -1,5 +1,5 @@
 import SingleSubject from "../singleSubject";
-import maths from "../../../assets/images/ks3.png";
+import maths from "../../../assets/images/ks3.webp";
 
 const Maths = () => {
   return (

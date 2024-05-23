@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 4rem;
-    padding: 1rem 4rem 4rem;
+    padding: 0rem 4rem 2rem;
     box-shadow: var(--page-shadow);
     background: var(--secondary);
 
@@ -17,13 +17,13 @@
 
       .hero-title {
         opacity: 0;
-        animation: fadeInLeft 3s forwards;
+        animation: fadeInLeft 1s forwards;
       }
 
       p,
       .button-container {
         opacity: 0;
-        animation: fadeInUp 3s forwards;
+        animation: fadeInUp 2s forwards;
       }
 
       .button-container {
@@ -35,13 +35,16 @@
 
   .subject-cards {
     padding: 1rem 4rem;
+    opacity: 0;
+    animation: fadeInUp 2s 1 forwards;
   }
 }
 
 @media screen and (max-width: 920px) {
   .subjects-page {
     .hero {
-      padding: 1rem 4rem 1rem;
+      padding: 0rem 4rem 1rem;
+
       .textbox {
         max-width: 100%;
         margin-bottom: 2rem;
@@ -51,6 +54,10 @@
           gap: 20px;
         }
       }
+    }
+
+    .subject-cards {
+      padding: 1rem 0rem;
     }
   }
 }

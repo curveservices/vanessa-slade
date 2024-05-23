@@ -1,11 +1,11 @@
+import Loader from "react-loaders";
 import SubjectCards from "../../../Cards/subjects-card";
-import english from "../../../../assets/images/home-img.jpg";
-import maths from "../../../../assets/images/ks2.png";
-import exam from "../../../../assets/images/gcse.png";
+import english from "../../../../assets/images/home-img.webp";
+import maths from "../../../../assets/images/ks2.webp";
+import exam from "../../../../assets/images/gcse.webp";
 import CTA from "../../../CTA";
 import ResourceTable from "../../../resourceTable";
 import "../index.scss";
-import Loader from "react-loaders";
 
 const MathsPapers = () => {
   return (
@@ -20,7 +20,6 @@ const MathsPapers = () => {
             />
           </div>
         </div>
-
         <section className="second-section">
           <SubjectCards
             title1="English Tuition"

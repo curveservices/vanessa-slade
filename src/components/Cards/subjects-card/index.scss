@@ -1,9 +1,11 @@
-.card-container {
+.subject-card-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 50px;
 
   .subjectCard {
-    width: 400px;
+    max-width: 375px;
     &:hover {
       transform: scale(1.1);
     }
@@ -16,17 +18,18 @@
   }
 
   .cardImg {
-    width: inherit;
+    max-width: 375px;
   }
 }
 
 @media screen and (max-width: 920px) {
-  .card-container {
+  .subject-card-container {
     display: flex;
     flex-direction: column;
+    padding: 0 2rem;
 
     .subjectCard {
-      width: 300px;
+      max-width: 300px;
       .title {
         padding: 1rem;
         text-align: center;

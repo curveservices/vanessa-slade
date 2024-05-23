@@ -18,6 +18,8 @@ import EnglishPapers from "./components/pages/Resources/english";
 import Subjects from "./components/pages/Subjects";
 import Tuition from "./components/pages/Tuition";
 import MathsPapers from "./components/pages/Resources/maths";
+import Verbal from "./components/pages/Resources/verbal";
+import NonVerbal from "./components/pages/Resources/non-verbal";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,6 +31,8 @@ const router = createBrowserRouter(
         <Route path="resources" element={<Resources />} />
         <Route path=":id/english-papers" element={<EnglishPapers />} />
         <Route path=":id/maths-papers" element={<MathsPapers />} />
+        <Route path=":id/verbal" element={<Verbal />} />
+        <Route path=":id/non-verbal" element={<NonVerbal />} />
         <Route path="english" element={<English />} />
         <Route path="maths" element={<Maths />} />
         <Route path="11-plus" element={<ElevenPlus />} />

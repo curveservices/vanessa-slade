@@ -2,7 +2,7 @@
   .hero {
     display: flex;
     justify-content: space-between;
-    background-image: url("../../../assets/images/home-img.jpg");
+    background-image: url("../../../assets/images/home-img.webp");
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: var(--page-shadow);
@@ -99,7 +99,7 @@
       }
       .card-container {
         opacity: 0;
-        animation: fadeInUp 1s 1s forwards;
+        animation: fadeIn 1s 1s forwards;
       }
     }
     .none {

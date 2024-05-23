@@ -7,7 +7,6 @@
   }
 
   .table {
-    height: 80vh;
     padding: 0 4rem;
     opacity: 0;
     animation: fadeIn 2s forwards;
@@ -22,4 +21,23 @@
 }
 
 @media screen and (max-width: 920px) {
+  .table-page {
+    .hero {
+      margin-bottom: 4rem;
+      padding: 1rem 1rem 3rem;
+    }
+
+    .table {
+      padding: 0 1rem;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      transition: all ease;
+    }
+
+    .second-section {
+      margin: 2rem 0;
+      padding: 4rem;
+      background: var(--secondary);
+    }
+  }
 }

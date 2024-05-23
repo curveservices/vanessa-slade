@@ -8,7 +8,7 @@
 .hero {
   padding: 1rem 4rem 5rem;
   background: var(--primary);
-  box-shadow: none;
+  box-shadow: var(--page-shadow);
 }
 
 .innerHero {
@@ -27,6 +27,7 @@ hr {
 }
 
 .imgContainer {
+  display: flex;
   margin-top: 5rem;
   animation: fadeInRight 2s forwards;
 }
@@ -47,7 +48,7 @@ hr {
   margin: 2rem 0;
   padding: 4rem;
   background: var(--secondary);
-  box-shadow: none;
+  box-shadow: var(--page-shadow);
 }
 
 .left {
@@ -68,7 +69,7 @@ hr {
   gap: 50px;
   margin: 2rem 0;
   padding: 4rem;
-  box-shadow: none;
+  box-shadow: var(--page-shadow);
   background: var(--primary);
 }
 .thirdLeft {
@@ -94,4 +95,66 @@ hr {
 }
 .none {
   opacity: 0;
+}
+
+@media screen and (max-width: 920px) {
+  .hero {
+    padding: 1rem 2rem;
+    background: var(--primary);
+  }
+
+  .innerHero {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  hr {
+    margin: 0rem 0rem 2rem;
+  }
+
+  .imgContainer {
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
+  .image {
+    width: 300px;
+  }
+
+  .buttonContainer {
+    margin-top: 1rem;
+    gap: 20px;
+  }
+
+  .secondSection {
+    flex-direction: column;
+    gap: 20px;
+    padding: 2rem;
+  }
+
+  .left {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .right {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .thirdSection {
+    flex-direction: column;
+    gap: 20px;
+    padding: 2rem;
+  }
+
+  .thirdLeft {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .thirdRight {
+    padding: 1rem;
+    width: 100%;
+  }
 }

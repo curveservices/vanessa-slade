@@ -6,30 +6,37 @@ table {
 
 td,
 th {
-  border: 1px solid var(--secondary);
+  border: 1px solid black;
   text-align: left;
-  padding: 8px;
+  padding: 8px 5px;
 }
 
 tr:nth-child(even) {
-  background: var(--secondary);
+  background: var(--oposite);
 }
 
 .header-title {
   padding: 1rem;
 }
+.mobile-show {
+  display: none;
+}
 @media screen and (max-width: 920px) {
   table {
-    border-collapse: collapse;
-    width: 100%;
     line-height: 1;
+    font-size: 10px;
+  }
+  .mobile-show {
+    display: block;
+    float: right;
   }
 
-  td,
-  th {
-    border: 1px solid var(--secondary);
-    text-align: left;
-    padding: 8px;
+  .remove {
+    display: none;
+  }
+
+  .answers {
+    width: 80px;
   }
 
   tr:nth-child(even) {
@@ -37,6 +44,6 @@ tr:nth-child(even) {
   }
 
   .header-title {
-    padding: 1rem;
+    padding: 0rem 1rem;
   }
 }

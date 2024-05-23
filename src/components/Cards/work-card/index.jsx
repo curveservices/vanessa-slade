@@ -8,7 +8,7 @@ import "./index.scss";
 
 const WorkCard = () => {
   return (
-    <>
+    <div className="work-card-container">
       <div className="card">
         <div className="text-container">
           <img src={abc} alt="abc blocks" className="card-image" />
@@ -70,7 +70,7 @@ const WorkCard = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

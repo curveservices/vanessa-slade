@@ -1,4 +1,9 @@
-import { faDownload, faList, faLock } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDownload,
+  faFilePdf,
+  faList,
+  faLock,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebase";
@@ -44,7 +49,7 @@ const ResourceTable = (props) => {
             <FontAwesomeIcon icon={faList} size="2x" />{" "}
           </th>
           <th>{props.title} </th>
-          <th>Question Paper</th>
+          <th className="remove">Question Paper</th>
           <th>Answers</th>
         </tr>
 
@@ -53,8 +58,14 @@ const ResourceTable = (props) => {
             <>
               <tr key={item.id}>
                 <td>{item.number}</td>
-                <td>{item.td}</td>
                 <td>
+                  <Link to={item.pdf} target="_blank">
+                    {item.td}{" "}
+                    <FontAwesomeIcon icon={faFilePdf} className="mobile-show" />
+                  </Link>
+                </td>
+
+                <td className="remove">
                   <Link
                     to={item.pdf}
                     download={item.download}
@@ -64,7 +75,7 @@ const ResourceTable = (props) => {
                     <FontAwesomeIcon icon={faDownload} color="blue" /> Download
                   </Link>
                 </td>
-                <td>
+                <td className="answers">
                   <Link to="" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faLock} color="red" /> Answers
                   </Link>
