@@ -9,13 +9,15 @@ const Footer = () => {
     <footer>
       <div className="link-container">
         <div className="links">
+          <NavLink to="/">Home</NavLink>
           <NavLink to="tuition">Tuition</NavLink>
           <NavLink to="subjects">Subjects</NavLink>
           <NavLink to="/" className="home-link">
             <img src={logo} alt="" className="logo" />
           </NavLink>
-          <NavLink to="about-me">About Me</NavLink>
-          <NavLink to="contact-me">Contact Me</NavLink>
+          <NavLink to="resources">Resources</NavLink>
+          <NavLink to="about-me">About</NavLink>
+          <NavLink to="contact-me">Contact</NavLink>
         </div>
       </div>
       <hr className="div-line"></hr>
