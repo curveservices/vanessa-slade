@@ -15,8 +15,8 @@ const NonVerbal = () => {
           <div className="table">
             <ResourceTable
               name="verbal"
-              header="11+ Verbal Reasoning Practice Papers"
-              title="Verbal Reasoning Practice Question Papers"
+              header="11+ Non Verbal Reasoning Practice Papers"
+              title="Non Verbal Reasoning Practice Question Papers"
             />
           </div>
         </div>
