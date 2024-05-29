@@ -16,7 +16,7 @@ const Contact = () => {
         <section className="text-box">
           <h1>Contact Me</h1>
           <p>
-            Ready to start classes? Wheather online or one-to-one I'm able to
+            Ready to start classes? Whether online or one-to-one I'm able to
             help
           </p>
           <div className="contact-form">

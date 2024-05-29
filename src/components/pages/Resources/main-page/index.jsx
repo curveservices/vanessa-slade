@@ -13,7 +13,7 @@ const Resources = () => {
             <h1 className="hero-title">Resources</h1>
             <p>
               Practice Papers &amp; Expert Tuition to Boost Your Child's
-              Potential, pleease download these resources to practice at home.
+              Potential, please download these resources to practice at home.
               To unlock the please follow the answers please follow the link.
             </p>
             <div className="button-container">
