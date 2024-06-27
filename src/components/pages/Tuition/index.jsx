@@ -1,7 +1,7 @@
 import Button from "../../button";
-import tuition from "../../../assets/images/ks2.webp";
-import online from "../../../assets/images/ks3.webp";
-import exam from "../../../assets/images/gcse.webp";
+import tuition from "../../../assets/images/ks2.png";
+import online from "../../../assets/images/ks3.png";
+import exam from "../../../assets/images/gcse.png";
 import CTA from "../../CTA";
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";

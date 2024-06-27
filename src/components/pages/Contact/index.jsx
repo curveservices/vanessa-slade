@@ -16,7 +16,7 @@ const Contact = () => {
         <section className="text-box">
           <h1>Contact Me</h1>
           <p>
-            Ready to start classes? Whether online or one-to-one I'm able to
+            Ready to start classes? Whether online or one-to-one Im able to
             help
           </p>
           <div className="contact-form">
@@ -83,7 +83,7 @@ const Contact = () => {
           <MapContainer center={[51.47263, -0.04075]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[51.47263, -0.04075]}>
-              <Popup>I'm here</Popup>
+              <Popup>I&espo;m here</Popup>
             </Marker>
           </MapContainer>
         </div>

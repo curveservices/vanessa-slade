@@ -1,7 +1,7 @@
 import SubjectCards from "../../Cards/subjects-card";
 import english from "../../../assets/images/home-img.webp";
-import maths from "../../../assets/images/ks2.webp";
-import exam from "../../../assets/images/gcse.webp";
+import maths from "../../../assets/images/ks2.png";
+import exam from "../../../assets/images/gcse.png";
 import "./index.scss";
 import Loader from "react-loaders";
 import CTA from "../../CTA";

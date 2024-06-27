@@ -2,16 +2,16 @@ import { NavLink } from "react-router-dom";
 import Button from "../../button";
 import img from "../../../assets/images/vanessa.jpg";
 import english from "../../../assets/images/home-img.webp";
-import maths from "../../../assets/images/ks2.webp";
-import exam from "../../../assets/images/gcse.webp";
+import maths from "../../../assets/images/ks2.png";
+import exam from "../../../assets/images/gcse.png";
 import CTA from "../../CTA";
 import { useState, useEffect } from "react";
 import WorkCard from "../../Cards/work-card";
-import Loader from "react-loaders";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComputer, faHouseChimney } from "@fortawesome/free-solid-svg-icons";
 import SubjectCards from "../../Cards/subjects-card";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const Home = () => {
   const [scrolledFirst, setScrolledFirst] = useState(false);
@@ -146,7 +146,17 @@ const Home = () => {
           <CTA />
         </section>
       </div>
-      <Loader type="ball-spin-fade-loader" color="black" />
+      <div>
+        <HelmetProvider>
+          <Helmet>
+            <title>Home | TelegraphHill Tutoring</title>
+            <meta
+              name="keywords"
+              content="Tutoring, Home schooling, private tutor, GCSE tutoring, Key stage 2, Keystage 3"
+            />
+          </Helmet>
+        </HelmetProvider>
+      </div>
     </>
   );
 };
