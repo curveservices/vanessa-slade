@@ -3,8 +3,8 @@ import SubjectCards from "../../../Cards/subjects-card";
 import CTA from "../../../CTA";
 import ResourceTable from "../../../resourceTable";
 import english from "../../../../assets/images/home-img.webp";
-import maths from "../../../../assets/images/ks2.png";
-import exam from "../../../../assets/images/gcse.png";
+import maths from "../../../../assets/images/ks2.webp";
+import exam from "../../../../assets/images/gcse.webp";
 import "../index.scss";
 
 const NonVerbal = () => {

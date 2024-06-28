@@ -1,5 +1,5 @@
 import SingleSubject from "../singleSubject";
-import gcse from "../../../assets/images/gcse.png";
+import gcse from "../../../assets/images/gcse.webp";
 
 const ElevenPlus = () => {
   return (

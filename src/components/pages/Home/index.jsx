@@ -1,17 +1,17 @@
 import { NavLink } from "react-router-dom";
 import Button from "../../button";
-import img from "../../../assets/images/vanessa.jpg";
+import img from "../../../assets/images/vanessa.webp";
 import english from "../../../assets/images/home-img.webp";
-import maths from "../../../assets/images/ks2.png";
-import exam from "../../../assets/images/gcse.png";
+import maths from "../../../assets/images/ks2.webp";
+import exam from "../../../assets/images/gcse.webp";
 import CTA from "../../CTA";
 import { useState, useEffect } from "react";
 import WorkCard from "../../Cards/work-card";
-import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComputer, faHouseChimney } from "@fortawesome/free-solid-svg-icons";
 import SubjectCards from "../../Cards/subjects-card";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import "./index.scss";
 
 const Home = () => {
   const [scrolledFirst, setScrolledFirst] = useState(false);
