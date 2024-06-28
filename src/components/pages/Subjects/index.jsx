@@ -15,7 +15,7 @@ const Subjects = () => {
           <div className="textbox">
             <h1 className="hero-title">Subjects</h1>
             <p>
-              I offer home and online tuition. I will access the needs of each
+              I offer home and online tuition. I will assess the needs of each
               student and design a learning programme that will ensure success.
             </p>
             <div className="button-container">
