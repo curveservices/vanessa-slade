@@ -7,8 +7,8 @@ import "./index.scss";
 const Resources = () => {
   return (
     <>
-      <div className="resources-page">
-        <div className="hero">
+      <section className="resources-page">
+        <section className="hero">
           <div className="textbox">
             <h1 className="hero-title">Resources</h1>
             <p>
@@ -21,14 +21,16 @@ const Resources = () => {
               <Button text="Book a Call" link="" background="var(--oposite)" />
             </div>
           </div>
-        </div>
-        <div className="resource-cards">
+        </section>
+        <section className="second-section">
+           <div className="resource-cards">
           <ResourceCards />
         </div>
+        </section>
         <div className="cta">
           <CTA />
         </div>
-      </div>
+      </section>
       <Loader type="ball-spin-fade-loader" color="black" />
     </>
   );

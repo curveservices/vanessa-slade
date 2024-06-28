@@ -13,13 +13,14 @@
     text-align: center;
     gap: 20px;
     max-width: 500px;
-    border: 1px solid;
     border-radius: 10px;
     padding: 2rem 3rem;
-    background: var(--secondary);
+    background: var(--primary);
+    box-shadow: var(--global-shadow);
 
     &:hover {
       transform: scale(1.05);
+      background: var(--secondary);
     }
 
     .icon {

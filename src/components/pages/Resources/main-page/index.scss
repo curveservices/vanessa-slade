@@ -5,7 +5,7 @@
     margin-bottom: 4rem;
     padding: 0rem 4rem 2rem;
     box-shadow: var(--page-shadow);
-    background: var(--secondary);
+    background: var(--primary);
 
     .textbox {
       display: flex;
@@ -32,11 +32,17 @@
       }
     }
   }
-  .resource-cards {
-    padding: 1rem 4rem;
-    opacity: 0;
-    animation: fadeInUp 2s 1 forwards;
+
+  .second-section {
+    background: var(--secondary);
+    padding: 2rem 0;
+    .resource-cards {
+        padding: 1rem 4rem;
+        opacity: 0;
+        animation: fadeInUp 2s 1 forwards;
+      }
   }
+  
 }
 
 @media screen and (max-width: 920px) {
