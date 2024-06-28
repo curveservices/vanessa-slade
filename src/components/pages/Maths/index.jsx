@@ -14,7 +14,7 @@ const Maths = () => {
             your child should know the number bonds to 20. I will ensure that these foundations are in place so that your child will feel confident 
             with their National Maths test."
       rightH2="KS2 Maths"
-      rightP="KS2: Your child will be required to sit a multiplication tables check at the beginning of this key stage.
+      rightP="Your child will be required to sit a multiplication tables check at the beginning of this key stage.
             I will focus on this area before moving on to prepare your child for the National SAT test at the end of the key stage. The SAT assessment is 
             particularly important as it will be used at secondary school to set targets and inform teaching groups.  If you are in Lewisham or the immediate surrounding area 
             I will tutor your child from the comfort of your own home."

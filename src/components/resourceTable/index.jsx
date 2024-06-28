@@ -44,6 +44,7 @@ const ResourceTable = (props) => {
     <>
       <h2 className="header-title">{props.header}</h2>
       <table>
+        <thead>
         <tr>
           <th>
             <FontAwesomeIcon icon={faList} size="2x" />{" "}
@@ -55,7 +56,6 @@ const ResourceTable = (props) => {
 
         {resources.map((item) => {
           return (
-            <>
               <tr key={item.id}>
                 <td>{item.number}</td>
                 <td>
@@ -81,9 +81,9 @@ const ResourceTable = (props) => {
                   </Link>
                 </td>
               </tr>
-            </>
           );
         })}
+          </thead>
       </table>
       <Loader type="ball-spin-fade-loader" color="black" />
     </>

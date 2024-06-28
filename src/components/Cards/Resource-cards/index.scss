@@ -29,7 +29,7 @@
   }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 450px) {
   .cardContainer {
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     row-gap: 20px;

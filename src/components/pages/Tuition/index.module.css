@@ -54,25 +54,46 @@
   opacity: 0;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1050px) {
   .hero {
-    flex-direction: column;
-    margin: 0;
-  }
+      flex-direction: column;
+      margin: 0;
+    }
 
   .textbox {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    padding: 2rem;
+    padding: 3rem 6rem;
   }
 
-  .anim {
-    animation: fadeInLeft 1s forwards;
+  .imgContainer {
+    align-self: center;
+    margin: 2rem 0rem;
+    padding: 3rem;
   }
 
-  .imgAnim {
-    animation: fadeInRight 1s forwards;
+  .tuitionImg {
+    width: 800px;
+  }
+
+  .secondSection {
+    flex-direction: column;
+  }
+
+  .thirdSection {
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .textbox {
+    padding: 2rem 4rem;
   }
 
   .imgContainer {

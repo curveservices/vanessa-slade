@@ -97,7 +97,46 @@ hr {
   opacity: 0;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1050px) {
+  .image {
+    margin-top: 2rem;
+    width: 300px;
+    height: 300px;
+  }
+
+  .buttonContainer {
+    display: flex;
+    margin-top: 3rem;
+    padding: 0;
+    gap: 20px;
+  }
+
+    button {
+      width: 175px;
+    }
+
+  .thirdSection {
+      justify-content: center;
+    }
+
+    .animLeft {
+      animation: none;
+    }
+  
+    .animRight {
+      animation: none;
+    }
+  
+    .animSecond {
+      animation: none;
+    }
+  
+    .none {
+      opacity: initial;
+    }
+}
+
+@media screen and (max-width: 450px) {
   .hero {
     padding: 1rem 2rem;
     background: var(--primary);
