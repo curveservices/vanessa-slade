@@ -5,7 +5,7 @@
     margin-bottom: 4rem;
     padding: 0rem 4rem 2rem;
     box-shadow: var(--page-shadow);
-    background: var(--secondary);
+    background: var(--primary);
 
     .textbox {
       display: flex;
@@ -33,15 +33,28 @@
     }
   }
 
-  .subject-cards {
-    padding: 1rem 4rem;
-    opacity: 0;
-    animation: fadeInUp 2s 1 forwards;
+  .second-section {
+      margin-bottom: 4rem;
+      padding: 5rem 0rem;
+      box-shadow: var(--page-shadow);
+      background: var(--secondary);
+    .second-inner {
+      .subject-cards {
+        padding: 1rem 4rem;
+        opacity: 0;
+        animation: fadeInUp 2s 1 forwards;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 920px) {
   .subjects-page {
+    flex-direction: column;
+    margin-bottom: 0rem;
+    padding: 0rem;
+    box-shadow: var(--page-shadow);
+    background: var(--primary);
     .hero {
       padding: 0rem 4rem 1rem;
 
@@ -56,8 +69,19 @@
       }
     }
 
-    .subject-cards {
-      padding: 1rem 0rem;
+    .second-section {
+      margin-bottom: 4rem;
+      padding: 5rem 0rem;
+      box-shadow: var(--page-shadow);
+      background: var(--secondary);
+
+      .second-inner {
+        .subject-cards {
+          padding: 1rem 0rem;
+          opacity: 0;
+          animation: fadeInUp 2s 1 forwards;
+        }
+      }
     }
   }
 }

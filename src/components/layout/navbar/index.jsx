@@ -8,7 +8,6 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect } from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo1 from "../../../assets/images/logobgr1.png";
@@ -18,18 +17,6 @@ import { faReact } from "@fortawesome/free-brands-svg-icons";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      setIsScrolled(scrollY > 500);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <header>
@@ -101,7 +88,7 @@ const Navbar = () => {
         >
           <div className="menu-container">
             <FontAwesomeIcon icon={faUser} className="mobile-icon" />
-            <div className="text">About Me</div>
+            <div className="text">About</div>
           </div>
         </NavLink>
         <NavLink
@@ -114,7 +101,7 @@ const Navbar = () => {
         >
           <div className="menu-container">
             <FontAwesomeIcon icon={faEnvelope} className="mobile-icon" />
-            <div className="text">Contact Me</div>
+            <div className="text">Contact</div>
           </div>
         </NavLink>
         <FontAwesomeIcon
