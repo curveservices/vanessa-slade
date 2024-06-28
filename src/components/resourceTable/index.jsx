@@ -10,7 +10,6 @@ import { db } from "../../firebase";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Loader from "react-loaders";
 import "./index.scss";
 
 const ResourceTable = (props) => {
@@ -85,7 +84,6 @@ const ResourceTable = (props) => {
         })}
           </thead>
       </table>
-      <Loader type="ball-spin-fade-loader" color="black" />
     </>
   );
 };

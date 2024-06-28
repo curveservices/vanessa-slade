@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Loader from "react-loaders";
 import Button from "../../button";
 import CTA from "../../CTA";
 import style from "./index.module.css";
@@ -115,7 +114,6 @@ const SingleSubject = (props) => {
         </section>
         <CTA />
       </div>
-      <Loader type="ball-spin-fade-loader" color="black" />
     </>
   );
 };

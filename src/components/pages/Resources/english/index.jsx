@@ -1,4 +1,3 @@
-import Loader from "react-loaders";
 import SubjectCards from "../../../Cards/subjects-card";
 import english from "../../../../assets/images/home-img.webp";
 import maths from "../../../../assets/images/ks2.webp";
@@ -9,7 +8,6 @@ import "../index.scss";
 
 const EnglishPapers = () => {
   return (
-    <>
       <section className="table-page">
         <div className="hero">
           <div className="table">
@@ -38,8 +36,6 @@ const EnglishPapers = () => {
           <CTA />
         </div>
       </section>
-      <Loader type="ball-spin-fade-loader" color="black" />
-    </>
   );
 };
 

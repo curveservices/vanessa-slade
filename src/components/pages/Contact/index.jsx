@@ -1,8 +1,4 @@
-import { faCalendarWeek } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-import Loader from "react-loaders";
-import { Link } from "react-router-dom";
 import "./index.scss";
 
 const Contact = () => {
@@ -79,7 +75,6 @@ const Contact = () => {
           </MapContainer>
         </div>
       </div>
-      <Loader type="ball-spin-fade-loader" color="black" />
     </>
   );
 };

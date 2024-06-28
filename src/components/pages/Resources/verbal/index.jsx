@@ -1,4 +1,3 @@
-import Loader from "react-loaders";
 import SubjectCards from "../../../Cards/subjects-card";
 import ResourceTable from "../../../resourceTable";
 import english from "../../../../assets/images/home-img.webp";
@@ -9,7 +8,6 @@ import CTA from "../../../CTA";
 
 const Verbal = () => {
   return (
-    <>
       <section className="table-page">
         <div className="hero">
           <div className="table">
@@ -38,8 +36,6 @@ const Verbal = () => {
           <CTA />
         </div>
       </section>
-      <Loader type="ball-spin-fade-loader" color="black" />
-    </>
   );
 };
 

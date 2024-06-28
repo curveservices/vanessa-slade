@@ -1,4 +1,3 @@
-import Loader from "react-loaders";
 import Button from "../../../button";
 import ResourceCards from "../../../Cards/Resource-cards";
 import CTA from "../../../CTA";
@@ -31,7 +30,6 @@ const Resources = () => {
           <CTA />
         </div>
       </section>
-      <Loader type="ball-spin-fade-loader" color="black" />
     </>
   );
 };

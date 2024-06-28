@@ -9,7 +9,6 @@ import "../index.scss";
 
 const NonVerbal = () => {
   return (
-    <>
       <section className="table-page">
         <div className="hero">
           <div className="table">
@@ -38,8 +37,6 @@ const NonVerbal = () => {
           <CTA />
         </div>
       </section>
-      <Loader type="ball-spin-fade-loader" color="black" />
-    </>
   );
 };
 

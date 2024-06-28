@@ -4,7 +4,6 @@ import online from "../../../assets/images/ks3.webp";
 import exam from "../../../assets/images/gcse.webp";
 import CTA from "../../CTA";
 import { useEffect, useState } from "react";
-import Loader from "react-loaders";
 import style from "./index.module.css";
 
 const Tuition = () => {
@@ -27,8 +26,7 @@ const Tuition = () => {
   }, []);
 
   return (
-    <>
-      <div className="tuition-page">
+      <section className="tuition-page">
         <section className={style.hero}>
           <div className={`${style.textbox} ${style.anim}`}>
             <h1>Home Tuition £40</h1>
@@ -131,9 +129,7 @@ const Tuition = () => {
         <section className={style.forthSection}>
           <CTA />
         </section>
-      </div>
-      <Loader type="ball-spin-fade-loader" color="black" />
-    </>
+      </section>
   );
 };
 

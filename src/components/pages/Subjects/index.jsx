@@ -2,14 +2,13 @@ import SubjectCards from "../../Cards/subjects-card";
 import english from "../../../assets/images/home-img.webp";
 import maths from "../../../assets/images/ks2.webp";
 import exam from "../../../assets/images/gcse.webp";
-import Loader from "react-loaders";
 import CTA from "../../CTA";
 import Button from "../../button";
 import "./index.scss"
 
 const Subjects = () => {
   return (
-    <>
+   
       <section className="subjects-page">
         <div className="hero">
           <div className="textbox">
@@ -44,15 +43,12 @@ const Subjects = () => {
                 background="var(--oposite)"
               />
             </div>
-        </div>
+          </div>
+        </section>
+        <section className="cta">
+          <CTA />
+        </section>
       </section>
-      </section>
-     
-      <section className="cta">
-        <CTA />
-      </section>
-      <Loader type="ball-spin-fade-loader" color="black" />
-    </>
   );
 };
 
