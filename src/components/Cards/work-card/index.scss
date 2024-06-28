@@ -53,6 +53,17 @@
   }
 }
 
+@media screen and (max-width: 1050px) {
+  .work-card-container {
+      flex-wrap: wrap;
+  
+      .card-image {
+        width: 100px;
+        padding: 0rem;
+      }
+    }
+}
+
 @media screen and (max-width: 920px) {
   .work-card-container {
     align-items: center;

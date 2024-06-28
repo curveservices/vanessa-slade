@@ -24,7 +24,7 @@ const Home = () => {
       const thirdScroll = window.scrollY;
       const tuitionScroll = window.scrollY;
 
-      setScrolledFirst(scrollCards > 550);
+      setScrolledFirst(scrollCards > 150);
       setScrolledSubjects(thirdScroll > 1200);
       setScrolledTuition(tuitionScroll > 2400);
     };

@@ -1,15 +1,11 @@
 import { faCalendarWeek } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useLayoutEffect } from "react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import Loader from "react-loaders";
 import { Link } from "react-router-dom";
 import "./index.scss";
 
 const Contact = () => {
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <>
       <div className="contact-page">
@@ -56,11 +52,6 @@ const Contact = () => {
                 </li>
                 <li>
                   <input type="submit" className="flat-button" value="send" />
-                </li>
-                <li>
-                  <Link className="call-button" target="_blank" noreferer to="">
-                    <FontAwesomeIcon icon={faCalendarWeek} /> Book a call
-                  </Link>
                 </li>
               </ul>
             </form>

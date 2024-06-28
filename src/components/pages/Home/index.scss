@@ -178,7 +178,55 @@
   }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1050px) {
+  .home-page {
+      .hero {
+        background-size: contain;
+        box-shadow: none;
+        height: 50svh;
+  
+        .text-container {
+          top: 4%;
+  
+          .title {
+            font-size: 48px;
+          }
+  
+          button {
+            width: 250px;
+          }
+        }
+      }
+  
+      .third-section {
+        .textbox {
+          .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            gap: 50px;
+          }
+        }
+      }
+  
+      .forth-section {
+        .forth-inner {
+          .work-container {
+            font-size: 32px;
+          }
+  
+          .about-container {
+            .about-work {
+              flex-direction: column;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+} 
+
+@media screen and (max-width: 900px) {
   .home-page {
     .hero {
       background-image: none;
