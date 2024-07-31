@@ -60,8 +60,8 @@ const WorkCard = () => {
             <li>Maths</li>
           </ul>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore
+            Your child will be ready to take tests in July.
+            The school will send results of your child’s tests and teacher assessments.
           </p>
           <Button
             text="Start Lessons"

@@ -15,7 +15,7 @@ const SubjectCards = (props) => {
           <h2 className="title" style={cardStyle}>
             {props.title1}
           </h2>
-          <img src={props.src1} alt="" className="cardImg" />
+          <img src={props.src1} alt="Image of children learning" className="cardImg" />
         </div>
       </NavLink>
       <NavLink to={props.link2}>
@@ -23,7 +23,7 @@ const SubjectCards = (props) => {
           <h2 className="title" style={cardStyle}>
             {props.title2}
           </h2>
-          <img src={props.src2} alt="" className="cardImg" />
+          <img src={props.src2} alt="Image of children learning" className="cardImg" />
         </div>
       </NavLink>
       <NavLink to={props.link3}>
@@ -31,7 +31,7 @@ const SubjectCards = (props) => {
           <h2 className="title" style={cardStyle}>
             {props.title3}
           </h2>
-          <img src={props.src3} alt="" className="cardImg" />
+          <img src={props.src3} alt="Image of children learning" className="cardImg" />
         </div>
       </NavLink>
     </div>
