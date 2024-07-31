@@ -17,7 +17,7 @@ We worked with them to get the colour palette, fonts, and images to create a vis
 <a href="https://javascript.info/">
     <img width="100" alt="Javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" /></a> 
 <a href="https://react.dev/">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" /></a>
+    <img width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" /></a>
 <a href="https://html.com/html5/">
     <img width="100" alt="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" /></a> 
 <a href="https://css3.com/">
