@@ -23,7 +23,7 @@ We worked with them to get the colour palette, fonts, and images to create a vis
 <a href="https://css3.com/">
     <img width="100" alt="CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" /></a> 
     <a href="https://sass-lang.com//">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" /></a> 
+    <img width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" /></a> 
 <a href="https://git-scm.com/">
     <img width="100" alt="GIT" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" /></a>
 <a href="https://jestjs.io/">
