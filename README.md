@@ -3,7 +3,7 @@
 ## Live Demo 👉 [Telegraph Hill Tutoring](https://telegraphhilltutoring.netlify.app/)
 
 ## PC View 👇
-(https://i.ibb.co/tJvSjpY/telehill-optim-2.webp)
+<img width="1140" src="https://i.ibb.co/tJvSjpY/telehill-optim-2.webp"/>
 
 ## Overview
 
