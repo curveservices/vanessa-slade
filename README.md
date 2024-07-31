@@ -31,7 +31,7 @@ We worked with them to get the colour palette, fonts, and images to create a vis
           
 
 
-***<a href="https://twitter.com/Crypto_Rozla"> Rozla-Dev </a> 00-00-2023***
+***<a href="https://twitter.com/Crypto_Rozla"> Rozla-Dev </a> 31-07-2024***
 
 
 [Back to top 👆](#project)
